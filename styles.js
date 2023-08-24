@@ -74,7 +74,42 @@ const styles = StyleSheet.create({
     backgroundColor: '#323740',
     borderRadius: 360,
   },
+  categoryPicture: {
+    height: 100,
+    borderRadius: 100,
+    overflow: 'hidden',
+    //marginVertical: 10,
+    //margin: 6,
+  },
+  scrollContentContainer: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  // image: {
+  //   width: '100%',
+  //   height: '100%',
+  // },
+  CategoryName: {
+    position: 'absolute',
+    alignSelf: 'center',
+    justifyContent: 'center',
+    //backgroundColor: 'rgba(0, 0, 0, 0.4)', // Add a background to improve text readability
+    color: 'white', // Adjust text color
+    fontWeight: 'bold',
+    fontSize: 40,
+    marginTop: '5%',
+    // marginBottom: '5%',
+    //margin: '12%',
+    //padding: 10, // Add padding for better styling
+    borderRadius: 10, // Add border radius for the background
+  },
+  CatimageContainer: {
+    width: '95%',
+    //padding: 10,
+    marginTop: 20,
+    //marginLeft:
+  }
 });
-
 
 export default styles;
