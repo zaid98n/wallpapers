@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: 'gray',
+    //backgroundColor: '#af9f85',
   },
   imageContainer: {
     marginTop: 20,
@@ -11,11 +12,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   postProfilePicture: {
-    backgroundColor: 'gray',
+    backgroundColor: '#494949',
     borderRadius: 50,
     overflow: 'hidden',
     height: 285,
-    borderColor: 'gray',
+    borderColor: '#494949',
     borderWidth: 1,
   },
   photo: {
@@ -33,11 +34,10 @@ const styles = StyleSheet.create({
     marginTop: '2%',
   },
   button: {
-    backgroundColor: '#246bfd',
+    backgroundColor: '#93856e',
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 30,
-
   },
   buttonText: {
     color: 'white',

@@ -75,7 +75,7 @@ const Photos = ({ QUERY }) => {
     };
 
     const handleDownload = async (photoUrl) => {
-        const maxRetries = 6;
+        const maxRetries = 3;
         let retryCount = 0;
 
         while (retryCount < maxRetries) {

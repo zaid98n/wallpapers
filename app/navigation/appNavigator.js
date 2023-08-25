@@ -2,7 +2,6 @@ import React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import Home from '../components/Home';
 import Feeds from '../components/Feeds';
-// import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 
 const Tab = createMaterialTopTabNavigator();
@@ -12,21 +11,17 @@ const AppNavigator = () => {
         <Tab.Navigator
             screenOptions={() => ({
                 tabBarStyle: {
-                    backgroundColor: 'powderblue',
+                    backgroundColor: '#494949',
                 },
                 tabBarIndicatorStyle: {
                     backgroundColor: 'white',
                 },
+                tabBarLabelStyle: {
+                    color: 'white', // Set the text color to black
+                },
             })}
         >
-            <Tab.Screen
-                // options={{
-                //     title: ({ focused }) => (
-                //         <FontAwesome name='home' size={24} color="black" />
-                //     ),
-                // }}
-                name="Home"
-                component={Home} />
+            <Tab.Screen name="Home" component={Home} />
             <Tab.Screen name="Catgories" component={Feeds} />
         </Tab.Navigator>
     );
