@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'gray',
-    //backgroundColor: '#af9f85',
+    backgroundColor: '#f9f7ee',
+    //backgroundColor: '#f8fbfd',
   },
   imageContainer: {
     marginTop: 20,
@@ -12,12 +12,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   postProfilePicture: {
-    backgroundColor: '#494949',
+    backgroundColor: '#3e9feb',
     borderRadius: 50,
     overflow: 'hidden',
-    height: 285,
-    borderColor: '#494949',
-    borderWidth: 1,
+    //height: 285,
+    //height: '7%',
+    borderColor: '#3e9feb',
+    //borderWidth: 10,
+    elevation: 20,
   },
   photo: {
     width: '100%',
@@ -28,19 +30,19 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    //padding: 10,
+    padding: '2%',
     marginLeft: '25%',
     marginRight: '25%',
-    marginTop: '2%',
+    //marginTop: '2%',
   },
   button: {
-    backgroundColor: '#93856e',
+    backgroundColor: '#79bcf1',
     paddingHorizontal: 10,
     paddingVertical: 6,
     borderRadius: 30,
   },
   buttonText: {
-    color: 'white',
+    color: '#f9f7ee',
     fontSize: 16,
   },
   paginationContainer: {
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
   paginationButton: {
     paddingVertical: 10,
     paddingHorizontal: 20,
-    backgroundColor: '#246bfd',
+    backgroundColor: '#3e9feb',
     borderRadius: 8,
     marginHorizontal: 5,
     borderRadius: 50,
@@ -71,8 +73,9 @@ const styles = StyleSheet.create({
   },
   loader: {
     padding: 50,
-    backgroundColor: '#323740',
+    backgroundColor: '#3e9feb',
     borderRadius: 360,
+    elevation: 15,
   },
   categoryPicture: {
     height: 100,
@@ -80,6 +83,8 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     //marginVertical: 10,
     //margin: 6,
+    //backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    elevation: 15,
   },
   scrollContentContainer: {
     flexGrow: 1,
@@ -87,22 +92,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   // image: {
-  //   width: '100%',
-  //   height: '100%',
+  //   backgroundColor: 'rgba(255, 255, 255, 0.5)',
   // },
   CategoryName: {
     position: 'absolute',
     alignSelf: 'center',
     justifyContent: 'center',
     //backgroundColor: 'rgba(0, 0, 0, 0.4)', // Add a background to improve text readability
-    color: 'white', // Adjust text color
+    color: 'white',
     fontWeight: 'bold',
     fontSize: 40,
     marginTop: '5%',
-    // marginBottom: '5%',
-    //margin: '12%',
-    //padding: 10, // Add padding for better styling
-    borderRadius: 10, // Add border radius for the background
+    borderRadius: 10,
   },
   CatimageContainer: {
     width: '95%',

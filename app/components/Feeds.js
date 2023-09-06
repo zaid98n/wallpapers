@@ -22,10 +22,11 @@ function Feeds() {
         <Stack.Navigator screenOptions={{
             headerTitleAlign: 'center',
             headerStyle: {
-                backgroundColor: '#323740', // Set the background color to black
+                backgroundColor: '#3e9feb',
                 borderRadius: 0,
+                elevation: 20,
             },
-            headerTintColor: 'white', // Set the text color to white
+            headerTintColor: 'white'
         }}>
             <Stack.Screen name="Categories" component={CategoriesScreen} />
             <Stack.Screen name="Nature" component={Nature} />

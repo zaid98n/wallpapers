@@ -11,13 +11,19 @@ const AppNavigator = () => {
         <Tab.Navigator
             screenOptions={() => ({
                 tabBarStyle: {
-                    backgroundColor: '#494949',
+                    //backgroundColor: '#3e9feb',
+                    elevation: 20,
+                    backgroundColor: 'rgba(62, 158, 235, 1)',
                 },
                 tabBarIndicatorStyle: {
                     backgroundColor: 'white',
+                    height: 3, // Adjust the height of the indicator
                 },
                 tabBarLabelStyle: {
-                    color: 'white', // Set the text color to black
+                    color: '#f9f7ee',
+                    fontFamily: 'normal',
+                    fontWeight: 'bold',
+                    fontSize: 16,
                 },
             })}
         >

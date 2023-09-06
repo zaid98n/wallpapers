@@ -63,7 +63,7 @@ const Photos = ({ QUERY }) => {
             });
             const data = await response.json();
             const photoData = data.photos.map(photo => ({
-                mediumUrl: photo.src.medium,
+                mediumUrl: photo.src.large,
                 largeUrl: photo.src.original,
                 large2x: photo.src.large2x,
             }));
