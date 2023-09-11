@@ -17,7 +17,7 @@ const AppNavigator = () => {
                 },
                 tabBarIndicatorStyle: {
                     backgroundColor: 'white',
-                    height: 3, // Adjust the height of the indicator
+                    height: 3,
                 },
                 tabBarLabelStyle: {
                     color: '#f9f7ee',

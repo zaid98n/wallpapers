@@ -1,9 +1,6 @@
 import React, { Component, useState } from 'react';
 import { Text, View, Image, TextInput, ScrollView, TouchableOpacity, Alert, Modal, Dimensions } from 'react-native';
-// import { MaterialIcons } from 'react-native-vector-icons';
 import styles from '../../styles';
-// import { v4 as uuidv4 } from 'uuid';
-// import Icon from 'react-native-vector-icons/FontAwesome';
 import { createStackNavigator } from '@react-navigation/stack';
 import Nature from './Nature';
 import Happiness from './Happiness';
@@ -24,9 +21,19 @@ function Feeds() {
             headerStyle: {
                 backgroundColor: '#3e9feb',
                 borderRadius: 0,
+                height: 42,
                 elevation: 20,
             },
-            headerTintColor: 'white'
+            headerTintColor: 'white',
+            headerTitleStyle: {
+                //fontFamily: 'YourRoundedFont', // Replace with your rounded font
+                fontSize: 20, // Adjust font size
+                fontStyle: 'italic'
+            },
+            headerTitleContainerStyle: {
+                //left: 50, // Adjust title's position horizontally
+                //right: 100
+            },
         }}>
             <Stack.Screen name="Categories" component={CategoriesScreen} />
             <Stack.Screen name="Nature" component={Nature} />

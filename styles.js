@@ -4,21 +4,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#f9f7ee',
-    //backgroundColor: '#f8fbfd',
   },
   imageContainer: {
     marginTop: 20,
-    //marginBottom: 20,
     alignItems: 'center',
   },
   postProfilePicture: {
     backgroundColor: '#3e9feb',
     borderRadius: 50,
     overflow: 'hidden',
-    //height: 285,
-    //height: '7%',
     borderColor: '#3e9feb',
-    //borderWidth: 10,
     elevation: 20,
   },
   photo: {
@@ -33,7 +28,6 @@ const styles = StyleSheet.create({
     padding: '2%',
     marginLeft: '25%',
     marginRight: '25%',
-    //marginTop: '2%',
   },
   button: {
     backgroundColor: '#79bcf1',
@@ -81,9 +75,6 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 100,
     overflow: 'hidden',
-    //marginVertical: 10,
-    //margin: 6,
-    //backgroundColor: 'rgba(255, 255, 255, 0.2)',
     elevation: 15,
   },
   scrollContentContainer: {
@@ -91,14 +82,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  // image: {
-  //   backgroundColor: 'rgba(255, 255, 255, 0.5)',
-  // },
   CategoryName: {
     position: 'absolute',
     alignSelf: 'center',
     justifyContent: 'center',
-    //backgroundColor: 'rgba(0, 0, 0, 0.4)', // Add a background to improve text readability
     color: 'white',
     fontWeight: 'bold',
     fontSize: 40,
@@ -107,9 +94,7 @@ const styles = StyleSheet.create({
   },
   CatimageContainer: {
     width: '95%',
-    //padding: 10,
     marginTop: 20,
-    //marginLeft:
   }
 });
 

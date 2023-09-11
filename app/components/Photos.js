@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { View, Image, Text, StyleSheet, ScrollView, TouchableOpacity, Dimensions, ActivityIndicator } from 'react-native';
+import { View, Image, Text, ScrollView, TouchableOpacity, Dimensions, ActivityIndicator } from 'react-native';
 import RNFetchBlob from 'rn-fetch-blob';
 import styles from '../../styles';
 import FullScreenImage from './FullScreenImage';
@@ -17,12 +17,10 @@ const Photos = ({ QUERY }) => {
 
     const [fullscreenImage, setFullscreenImage] = useState(null);
 
-    // Function to open the full-screen image
     const openFullscreenImage = (imageUrl) => {
         setFullscreenImage(imageUrl);
     };
 
-    // Function to close the full-screen image
     const closeFullscreenImage = () => {
         setFullscreenImage(null);
     };
@@ -46,7 +44,6 @@ const Photos = ({ QUERY }) => {
 
     const API_KEY = 'Z2czjJRDYYfOQIHRlsrFU8KjeQCnUOgz591mdW2WnibUuEjkKWcmrqVE';
     const BASE_URL = 'https://api.pexels.com/v1/search';
-    //const QUERY = 'desktopwallpapers';
     const PER_PAGE = 80;
 
     useEffect(() => {
@@ -92,13 +89,11 @@ const Photos = ({ QUERY }) => {
                 }).fetch('GET', photoUrl);
 
                 console.log('Downloaded:', response.path());
-                return; // Break out of the loop if download succeeds
+                return;
             } catch (error) {
                 console.error('Error downloading:', error);
                 retryCount++;
-
-                // Add a delay before retrying
-                await new Promise(resolve => setTimeout(resolve, 1000)); // Wait for 1 second before retrying
+                await new Promise(resolve => setTimeout(resolve, 1000));
             }
         }
 
@@ -111,20 +106,12 @@ const Photos = ({ QUERY }) => {
 
     return (
         <View style={styles.container}>
-            {/* <View>
-                <Text style={{
-                    fontWeight: 'bold', textAlign: 'center', fontSize: 20, backgroundColor: '#323740',
-                    color: 'white', borderColor: '#246bfd', padding: 9, borderWidth: 0, borderRadius: 0
-                }}>
-                    Latest Wallpapers
-                </Text>
-            </View> */}
             <ScrollView
                 ref={scrollViewRef}
                 contentContainerStyle={styles.scrollContentContainer}
                 onContentSizeChange={() => { }}
             >
-                {loading ? ( // Show loader while loading is true
+                {loading ? (
                     <View style={styles.loaderScreen}>
                         <ActivityIndicator size="large" color="white" style={styles.loader} />
                     </View>

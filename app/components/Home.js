@@ -2,12 +2,6 @@ import React from 'react';
 import Photos from './Photos'
 import { createStackNavigator } from '@react-navigation/stack';
 
-// const App = () => {
-//     return (
-//         <Photos QUERY='desktopwallpapers' />
-//     );
-// };
-
 const Stack = createStackNavigator();
 
 function App() {
@@ -17,9 +11,19 @@ function App() {
             headerStyle: {
                 backgroundColor: '#3e9feb',
                 borderRadius: 0,
+                height: 42,
                 elevation: 20,
             },
-            headerTintColor: 'white'
+            headerTintColor: 'white',
+            headerTitleStyle: {
+                //fontFamily: 'YourRoundedFont', // Replace with your rounded font
+                fontSize: 20, // Adjust font size
+                fontStyle: 'italic'
+            },
+            headerTitleContainerStyle: {
+                //left: 50, // Adjust title's position horizontally
+                //right: 100
+            },
         }}>
             <Stack.Screen name="Latest Wallpaper" component={HomeScree} />
         </Stack.Navigator>
